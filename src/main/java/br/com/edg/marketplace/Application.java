@@ -4,6 +4,7 @@
  */
 package br.com.edg.marketplace;
 
+import br.com.edg.marketplace.views.FrmLogin;
 /**
  *
  * @author Dell
@@ -14,7 +15,8 @@ public class Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        FrmLogin login = new FrmLogin();
+        login.setVisible(true);
     }
     
 }
