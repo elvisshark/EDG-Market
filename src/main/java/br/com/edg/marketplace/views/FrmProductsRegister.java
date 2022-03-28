@@ -56,7 +56,7 @@ public class FrmProductsRegister extends javax.swing.JFrame {
         jLabel1.setText("Products List add:");
 
         btnAddProd.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        btnAddProd.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\java\\br\\com\\edg\\marketplace\\img\\plus.png")); // NOI18N
+        btnAddProd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/edg/marketplace/img/plus.png"))); // NOI18N
         btnAddProd.setText("ADD ITEM TO LIST");
         btnAddProd.setActionCommand("    ADD ITEM TO LIST");
         btnAddProd.setMaximumSize(new java.awt.Dimension(150, 420));
@@ -70,7 +70,7 @@ public class FrmProductsRegister extends javax.swing.JFrame {
         jLabel2.setText("Name product:");
 
         btnDeleteItem.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        btnDeleteItem.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\java\\br\\com\\edg\\marketplace\\img\\delete.png")); // NOI18N
+        btnDeleteItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/edg/marketplace/img/delete.png"))); // NOI18N
         btnDeleteItem.setText("DELETE ITEM IN LIST");
         btnDeleteItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,7 +119,7 @@ public class FrmProductsRegister extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI Historic", 1, 24)); // NOI18N
         jButton1.setText("REGISTER");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\java\\br\\com\\edg\\marketplace\\img\\Registro.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/edg/marketplace/img/Registro.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

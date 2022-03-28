@@ -134,7 +134,7 @@
           <Font name="Arial" size="12" style="0"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\java\br\com\edg\marketplace\img\plus.png"/>
+          <Image iconType="3" name="/br/com/edg/marketplace/img/plus.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="ADD ITEM TO LIST"/>
         <Property name="actionCommand" type="java.lang.String" value="    ADD ITEM TO LIST"/>
@@ -160,7 +160,7 @@
           <Font name="Arial" size="12" style="0"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\java\br\com\edg\marketplace\img\delete.png"/>
+          <Image iconType="3" name="/br/com/edg/marketplace/img/delete.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="DELETE ITEM IN LIST"/>
       </Properties>
@@ -257,7 +257,7 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\java\br\com\edg\marketplace\img\Registro.png"/>
+          <Image iconType="3" name="/br/com/edg/marketplace/img/Registro.png"/>
         </Property>
       </Properties>
     </Component>
