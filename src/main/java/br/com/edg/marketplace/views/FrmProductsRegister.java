@@ -189,9 +189,10 @@ public class FrmProductsRegister extends javax.swing.JFrame {
     private void btnAddProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddProdActionPerformed
         TableServiceImpl impl = new TableServiceImpl(tblListProd);
         impl.addItem(
-                txtNameProd.getText(), 
-                txtPrice.getText(), 
-                txtQuantity.getText());
+            txtNameProd.getText(), 
+            Integer.parseInt(txtQuantity.getText()),
+            Double.parseDouble(txtPrice.getText())
+        );
     }//GEN-LAST:event_btnAddProdActionPerformed
 
     private void btnDeleteItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteItemActionPerformed
