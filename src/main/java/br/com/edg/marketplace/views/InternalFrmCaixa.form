@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
   <Properties>
     <Property name="closable" type="boolean" value="true"/>
     <Property name="iconifiable" type="boolean" value="true"/>
@@ -219,7 +219,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\resources\img\Delete32.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="REMOVE PRODUCT   "/>
+            <Property name="text" type="java.lang.String" value="REMOVER PRODUTO "/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
@@ -233,7 +233,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\resources\img\Plus32.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="ADD PRODUCT          "/>
+            <Property name="text" type="java.lang.String" value="ADICIONAR PRODUTO"/>
           </Properties>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel4">

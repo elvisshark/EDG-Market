@@ -32,9 +32,9 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jFrame2 = new javax.swing.JFrame();
         buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
-        btnRegistroUser = new javax.swing.JButton();
+        btnRegistroProducts = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnEstoque = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
@@ -71,13 +71,13 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(51, 153, 255));
 
-        btnRegistroUser.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Registro32.png")); // NOI18N
-        btnRegistroUser.setText("Cadastrar Produtos");
-        btnRegistroUser.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnRegistroUser.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnRegistroUser.addActionListener(new java.awt.event.ActionListener() {
+        btnRegistroProducts.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Registro32.png")); // NOI18N
+        btnRegistroProducts.setText("Cadastrar Produtos");
+        btnRegistroProducts.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnRegistroProducts.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnRegistroProducts.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegistroUserActionPerformed(evt);
+                btnRegistroProductsActionPerformed(evt);
             }
         });
 
@@ -92,10 +92,15 @@ public class FrmMainScreen extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Inventory32.png")); // NOI18N
-        jButton4.setText("Estoque");
-        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnEstoque.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Inventory32.png")); // NOI18N
+        btnEstoque.setText("Estoque");
+        btnEstoque.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnEstoque.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnEstoque.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEstoqueActionPerformed(evt);
+            }
+        });
 
         jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Others32.png")); // NOI18N
         jButton5.setText("Outros");
@@ -149,13 +154,13 @@ public class FrmMainScreen extends javax.swing.JFrame {
                         .addComponent(jLabel1)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnRegistroUser)
+                        .addComponent(btnRegistroProducts)
                         .addGap(4, 4, 4)
                         .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4)
+                        .addComponent(btnEstoque)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -172,8 +177,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnRegistroUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnRegistroProducts, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnEstoque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -237,15 +242,23 @@ public class FrmMainScreen extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void btnRegistroUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroUserActionPerformed
-       // TODO add your handling code here:
-    }//GEN-LAST:event_btnRegistroUserActionPerformed
+    private void btnRegistroProductsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroProductsActionPerformed
+       InternalFrmProductsRegister registroProduto = new InternalFrmProductsRegister();
+       registroProduto.setVisible(true);
+       this.jDskInitial.add(registroProduto);
+    }//GEN-LAST:event_btnRegistroProductsActionPerformed
 
     private void btnCaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCaixaActionPerformed
         InternalFrmCaixa caixa = new InternalFrmCaixa();
         caixa.setVisible(true);
         this.jDskInitial.add(caixa);
     }//GEN-LAST:event_btnCaixaActionPerformed
+
+    private void btnEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstoqueActionPerformed
+        InternalFrmEstoque estoque = new InternalFrmEstoque();
+        estoque.setVisible(true);
+        this.jDskInitial.add(estoque);
+    }//GEN-LAST:event_btnEstoqueActionPerformed
 
     /**
      * @param args the command line arguments
@@ -284,10 +297,10 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCaixa;
-    private javax.swing.JButton btnRegistroUser;
+    private javax.swing.JButton btnEstoque;
+    private javax.swing.JButton btnRegistroProducts;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;

@@ -1,25 +1,21 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
  */
 package br.com.edg.marketplace.views;
 
 import br.com.edg.marketplace.service.impl.TableServiceImpl;
-import javax.swing.DefaultListModel;
-import javax.swing.JOptionPane;
-import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Danilo
+ * @author Dell
  */
-public class FrmProductsRegister extends javax.swing.JFrame {
+public class InternalFrmProductsRegister extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form FrmProductsRegister
+     * Creates new form InternalFrmProductsRegister
      */
-    public FrmProductsRegister() {
-        this.setLocationRelativeTo(null);
+    public InternalFrmProductsRegister() {
         initComponents();
     }
 
@@ -32,6 +28,12 @@ public class FrmProductsRegister extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblPrice = new javax.swing.JLabel();
+        txtQuantity = new javax.swing.JTextField();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        lblQuantity = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
         txtNameProd = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -41,24 +43,42 @@ public class FrmProductsRegister extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tblListProd = new javax.swing.JTable();
         txtPrice = new javax.swing.JTextField();
-        lblPrice = new javax.swing.JLabel();
-        txtQuantity = new javax.swing.JTextField();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        lblQuantity = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Registro de produtos");
+        setClosable(true);
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+
+        lblPrice.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblPrice.setText("Valor (R$):");
+
+        jCheckBox1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jCheckBox1.setText("Unidade de medida KG?");
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox1ActionPerformed(evt);
+            }
+        });
+
+        lblQuantity.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblQuantity.setText("Quantidade");
+
+        jButton1.setFont(new java.awt.Font("Segoe UI Historic", 1, 24)); // NOI18N
+        jButton1.setText("REGISTRAR");
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Registro.png")); // NOI18N
 
         lblTitle.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 24)); // NOI18N
-        lblTitle.setText("PRODUCTS REGISTER");
+        lblTitle.setText("REGISTRO DE PRODUTOS");
 
-        jLabel1.setText("Products List add:");
+        jLabel1.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        jLabel1.setText("PRODUTOS REGISTRADOS");
 
         btnAddProd.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         btnAddProd.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\plus.png")); // NOI18N
-        btnAddProd.setText("ADD ITEM TO LIST       ");
+        btnAddProd.setText("ADICIONAR ITEM A LISTA");
         btnAddProd.setActionCommand("    ADD ITEM TO LIST");
         btnAddProd.setMaximumSize(new java.awt.Dimension(150, 420));
         btnAddProd.setMinimumSize(new java.awt.Dimension(150, 420));
@@ -68,11 +88,12 @@ public class FrmProductsRegister extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Name product:");
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel2.setText("Nome do Produto");
 
         btnDeleteItem.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         btnDeleteItem.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\delete.png")); // NOI18N
-        btnDeleteItem.setText("DELETE ITEM IN LIST");
+        btnDeleteItem.setText("DELETAR ITEM DA LISTA");
         btnDeleteItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteItemActionPerformed(evt);
@@ -80,6 +101,7 @@ public class FrmProductsRegister extends javax.swing.JFrame {
         });
 
         tblListProd.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        tblListProd.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         tblListProd.setForeground(new java.awt.Color(255, 102, 102));
         tblListProd.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -105,22 +127,8 @@ public class FrmProductsRegister extends javax.swing.JFrame {
             }
         });
 
-        lblPrice.setText("Price (R$):");
-
-        jCheckBox1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jCheckBox1.setText("isKg ?");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
-            }
-        });
-
-        lblQuantity.setText("Quantity");
-
-        jButton1.setFont(new java.awt.Font("Segoe UI Historic", 1, 24)); // NOI18N
-        jButton1.setText("REGISTER");
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Registro.png")); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel4.setText("Código do produto:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -140,18 +148,22 @@ public class FrmProductsRegister extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtNameProd, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2))
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblPrice)
-                            .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(12, 12, 12)
+                            .addComponent(jLabel4)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(37, 37, 37)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblQuantity)
+                            .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblPrice))
+                        .addGap(38, 38, 38)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(txtQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(20, 20, 20)
-                                .addComponent(jCheckBox1)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
+                                .addComponent(txtQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(39, 39, 39)
+                                .addComponent(jCheckBox1))
+                            .addComponent(lblQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 153, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnAddProd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnDeleteItem))
@@ -175,87 +187,54 @@ public class FrmProductsRegister extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblPrice)
                             .addComponent(jLabel2)
-                            .addComponent(lblQuantity))
+                            .addComponent(lblQuantity)
+                            .addComponent(jLabel4))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jCheckBox1)
                             .addComponent(txtQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtNameProd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(45, 45, 45)
-                        .addComponent(jLabel1))
+                            .addComponent(txtNameProd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jCheckBox1)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(96, 96, 96)
                         .addComponent(btnAddProd, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnDeleteItem, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(13, 13, 13)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(36, 36, 36)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
+                .addGap(97, 97, 97)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(63, 63, 63))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
+
     private void btnAddProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddProdActionPerformed
         TableServiceImpl impl = new TableServiceImpl(tblListProd);
         impl.addItem(
-            txtNameProd.getText(), 
+            txtNameProd.getText(),
             Integer.parseInt(txtQuantity.getText()),
             Double.parseDouble(txtPrice.getText())
         );
     }//GEN-LAST:event_btnAddProdActionPerformed
 
     private void btnDeleteItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteItemActionPerformed
-        
+
     }//GEN-LAST:event_btnDeleteItemActionPerformed
 
     private void txtPriceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPriceActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPriceActionPerformed
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmProductsRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmProductsRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmProductsRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmProductsRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new FrmProductsRegister().setVisible(true);
-            }
-        });
-    }
-
-    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddProd;
     private javax.swing.JButton btnDeleteItem;
@@ -264,7 +243,9 @@ public class FrmProductsRegister extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblPrice;
     private javax.swing.JLabel lblQuantity;
     private javax.swing.JLabel lblTitle;
@@ -273,5 +254,4 @@ public class FrmProductsRegister extends javax.swing.JFrame {
     private javax.swing.JTextField txtPrice;
     private javax.swing.JTextField txtQuantity;
     // End of variables declaration//GEN-END:variables
-
 }
