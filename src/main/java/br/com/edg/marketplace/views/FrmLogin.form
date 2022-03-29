@@ -135,7 +135,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\java\br\com\edg\marketplace\img\UserLogin.png"/>
+              <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\resources\img\UserLogin.png"/>
             </Property>
           </Properties>
         </Component>

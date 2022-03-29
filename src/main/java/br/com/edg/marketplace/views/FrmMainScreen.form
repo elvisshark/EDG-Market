@@ -119,13 +119,15 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jButton4" min="-2" pref="56" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton9" min="-2" pref="57" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jButton7" min="-2" pref="56" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jButton5" min="-2" pref="56" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="722" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -136,8 +138,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jButton7" pref="50" max="32767" attributes="0"/>
-                              <Component id="jButton2" max="32767" attributes="0"/>
+                              <Component id="jButton2" pref="50" max="32767" attributes="0"/>
                               <Component id="btnRegistroUser" max="32767" attributes="0"/>
                               <Component id="jButton4" alignment="0" max="32767" attributes="0"/>
                               <Component id="jButton6" alignment="1" max="32767" attributes="0"/>
@@ -145,6 +146,11 @@
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                       <Component id="jButton5" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jButton7" min="-2" pref="50" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jButton9" alignment="1" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
@@ -157,7 +163,7 @@
         <Component class="javax.swing.JButton" name="btnRegistroUser">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/br/com/edg/marketplace/img/Registro32.png"/>
+              <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\resources\img\Registro32.png"/>
             </Property>
             <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>
@@ -168,7 +174,7 @@
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/br/com/edg/marketplace/img/UserLogin32.png"/>
+              <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\resources\img\UserLogin32.png"/>
             </Property>
           </Properties>
           <Events>
@@ -178,14 +184,14 @@
         <Component class="javax.swing.JButton" name="jButton4">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/br/com/edg/marketplace/img/Inventory32.png"/>
+              <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\resources\img\Inventory32.png"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="jButton5">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/br/com/edg/marketplace/img/Others32.png"/>
+              <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\resources\img\Others32.png"/>
             </Property>
           </Properties>
           <Events>
@@ -195,14 +201,14 @@
         <Component class="javax.swing.JButton" name="jButton6">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/br/com/edg/marketplace/img/RegistroSell32.png"/>
+              <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\resources\img\RegistroSell32.png"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="jButton7">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/br/com/edg/marketplace/img/Enginner.png"/>
+              <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\resources\img\Enginner.png"/>
             </Property>
           </Properties>
           <Events>
@@ -212,6 +218,13 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton9">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\resources\img\Carrinh32.png"/>
+            </Property>
           </Properties>
         </Component>
       </SubComponents>
@@ -381,7 +394,7 @@
               <Font name="Arial" size="14" style="0"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/br/com/edg/marketplace/img/Delete32.png"/>
+              <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\resources\img\Delete32.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="REMOVE PRODUCT   "/>
           </Properties>
@@ -395,7 +408,7 @@
               <Font name="Arial" size="14" style="0"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/br/com/edg/marketplace/img/Plus32.png"/>
+              <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\resources\img\Plus32.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="ADD PRODUCT          "/>
           </Properties>
@@ -472,7 +485,7 @@
               <Font name="Arial" size="18" style="0"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/br/com/edg/marketplace/img/List32.png"/>
+              <Image iconType="2" name="C:\Users\Dell\Desktop\SENAC\2 SEMESTRE\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\PROJETO\EDG-Market\EDG-Market\src\main\resources\img\List32.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Finalizar Compra"/>
           </Properties>

@@ -39,6 +39,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jButton9 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -84,7 +85,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(51, 153, 255));
 
-        btnRegistroUser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/edg/marketplace/img/Registro32.png"))); // NOI18N
+        btnRegistroUser.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Registro32.png")); // NOI18N
         btnRegistroUser.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         btnRegistroUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,25 +93,25 @@ public class FrmMainScreen extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/edg/marketplace/img/UserLogin32.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\UserLogin32.png")); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/edg/marketplace/img/Inventory32.png"))); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Inventory32.png")); // NOI18N
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/edg/marketplace/img/Others32.png"))); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Others32.png")); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/edg/marketplace/img/RegistroSell32.png"))); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\RegistroSell32.png")); // NOI18N
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/edg/marketplace/img/Enginner.png"))); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Enginner.png")); // NOI18N
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
@@ -118,6 +119,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
         });
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
+        jButton9.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Carrinh32.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -135,11 +138,13 @@ public class FrmMainScreen extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(722, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -148,13 +153,16 @@ public class FrmMainScreen extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
                             .addComponent(btnRegistroUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
                 .addContainerGap())
@@ -208,7 +216,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jFormattedTextField1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
 
         jButton1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/edg/marketplace/img/Delete32.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Delete32.png")); // NOI18N
         jButton1.setText("REMOVE PRODUCT   ");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -217,7 +225,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         });
 
         jButton8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/edg/marketplace/img/Plus32.png"))); // NOI18N
+        jButton8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Plus32.png")); // NOI18N
         jButton8.setText("ADD PRODUCT          ");
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Forma de Pagamento", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 10))); // NOI18N
@@ -256,7 +264,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         );
 
         jButton3.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/edg/marketplace/img/List32.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\List32.png")); // NOI18N
         jButton3.setText("Finalizar Compra");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -411,6 +419,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JFrame jFrame2;
@@ -431,4 +440,12 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
+
+    private void setLocationRelativto() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    private void setLocationRelativto(Object object) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
