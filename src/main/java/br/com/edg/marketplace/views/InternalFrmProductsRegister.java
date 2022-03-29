@@ -20,7 +20,6 @@ public class InternalFrmProductsRegister extends javax.swing.JInternalFrame {
 	 */
 	public InternalFrmProductsRegister() {
 		initComponents();
-		impl = new TableService(tblListProd);
 	}
 
 	/**
@@ -250,8 +249,6 @@ public class InternalFrmProductsRegister extends javax.swing.JInternalFrame {
 	private void txtPriceActionPerformed(java.awt.event.ActionEvent evt) {
 		// TODO add your handling code here:
 	}
-
-	private TableService impl = null;
 	
 	// Variables declaration - do not modify//GEN-BEGIN:variables
 	private javax.swing.JButton btnAddProd;
