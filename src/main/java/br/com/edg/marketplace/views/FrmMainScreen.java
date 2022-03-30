@@ -2,12 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package br.com.edg.marketplace.views.internalViews;
+package br.com.edg.marketplace.views;
 
 import br.com.edg.marketplace.views.internalViews.InternalFrmProductsRegister;
 import br.com.edg.marketplace.views.internalViews.InternalFrmEstoque;
 import br.com.edg.marketplace.views.internalViews.InternalFrmCaixa;
 import br.com.edg.marketplace.views.internalViews.InternalFrmCadastroCliente;
+import br.com.edg.marketplace.views.internalViews.InternalFrmCadastroCliente;
+import br.com.edg.marketplace.views.internalViews.InternalFrmCaixa;
+import br.com.edg.marketplace.views.internalViews.InternalFrmEstoque;
+import br.com.edg.marketplace.views.internalViews.InternalFrmProductsRegister;
 import javax.swing.SwingConstants;
 
 /**
