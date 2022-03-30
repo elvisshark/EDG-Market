@@ -4,19 +4,16 @@
  */
 package br.com.edg.marketplace.views.internalViews;
 
-import javax.swing.JOptionPane;
-import javax.swing.table.DefaultTableModel;
-
 /**
  *
  * @author Elvis - PC
  */
-public class InternalFrmCadastroCliente extends javax.swing.JInternalFrame {
+public class InternalFrmCadCliente extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form InternalFrmCadastroCliente
+     * Creates new form InternalFrmCadCliente
      */
-    public InternalFrmCadastroCliente() {
+    public InternalFrmCadCliente() {
         initComponents();
     }
 
@@ -191,7 +188,7 @@ public class InternalFrmCadastroCliente extends javax.swing.JInternalFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(258, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 348, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(318, 318, 318))
             .addGroup(layout.createSequentialGroup()
@@ -205,7 +202,7 @@ public class InternalFrmCadastroCliente extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
+                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -216,13 +213,13 @@ public class InternalFrmCadastroCliente extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnRemoverClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverClienteActionPerformed
-        //remover
-    }//GEN-LAST:event_btnRemoverClienteActionPerformed
-
     private void btnCadastrarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarClienteActionPerformed
         //adicionar
     }//GEN-LAST:event_btnCadastrarClienteActionPerformed
+
+    private void btnRemoverClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverClienteActionPerformed
+        //remover
+    }//GEN-LAST:event_btnRemoverClienteActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

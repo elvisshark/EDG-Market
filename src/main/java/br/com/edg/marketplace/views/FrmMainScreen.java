@@ -4,11 +4,10 @@
  */
 package br.com.edg.marketplace.views;
 
+import br.com.edg.marketplace.views.internalViews.InternalFrmCadCliente;
 import br.com.edg.marketplace.views.internalViews.InternalFrmProductsRegister;
 import br.com.edg.marketplace.views.internalViews.InternalFrmEstoque;
 import br.com.edg.marketplace.views.internalViews.InternalFrmCaixa;
-import br.com.edg.marketplace.views.internalViews.InternalFrmCadastroCliente;
-import br.com.edg.marketplace.views.internalViews.InternalFrmCadastroCliente;
 import br.com.edg.marketplace.views.internalViews.InternalFrmCaixa;
 import br.com.edg.marketplace.views.internalViews.InternalFrmEstoque;
 import br.com.edg.marketplace.views.internalViews.InternalFrmProductsRegister;
@@ -230,7 +229,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnOthersActionPerformed
 
     private void btnCadastrarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarClienteActionPerformed
-        InternalFrmCadastroCliente novoCliente = new InternalFrmCadastroCliente();
+        InternalFrmCadCliente novoCliente = new InternalFrmCadCliente();
         novoCliente.setVisible(true);
         this.jDskInitial.add(novoCliente);
     }//GEN-LAST:event_btnCadastrarClienteActionPerformed
