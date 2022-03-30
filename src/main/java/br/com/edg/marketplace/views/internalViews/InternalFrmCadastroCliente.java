@@ -217,11 +217,11 @@ public class InternalFrmCadastroCliente extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRemoverClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverClienteActionPerformed
-
+        //remover
     }//GEN-LAST:event_btnRemoverClienteActionPerformed
 
     private void btnCadastrarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarClienteActionPerformed
-        
+        //adicionar
     }//GEN-LAST:event_btnCadastrarClienteActionPerformed
 
 
