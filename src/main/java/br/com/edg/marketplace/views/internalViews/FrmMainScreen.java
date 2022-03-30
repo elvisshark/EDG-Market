@@ -2,8 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package br.com.edg.marketplace.views;
+package br.com.edg.marketplace.views.internalViews;
 
+import br.com.edg.marketplace.views.internalViews.InternalFrmProductsRegister;
+import br.com.edg.marketplace.views.internalViews.InternalFrmEstoque;
+import br.com.edg.marketplace.views.internalViews.InternalFrmCaixa;
+import br.com.edg.marketplace.views.internalViews.InternalFrmCadastroCliente;
 import javax.swing.SwingConstants;
 
 /**
@@ -33,12 +37,11 @@ public class FrmMainScreen extends javax.swing.JFrame {
         buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         btnRegistroProducts = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnCadastrarCliente = new javax.swing.JButton();
         btnEstoque = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        btnOthers = new javax.swing.JButton();
+        btnRelatorioVendas = new javax.swing.JButton();
+        btnConfig = new javax.swing.JButton();
         btnCaixa = new javax.swing.JButton();
         jDskInitial = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -71,7 +74,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(51, 153, 255));
 
-        btnRegistroProducts.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Registro32.png")); // NOI18N
         btnRegistroProducts.setText("Cadastrar Produtos");
         btnRegistroProducts.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnRegistroProducts.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -81,18 +83,16 @@ public class FrmMainScreen extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\UserLogin32.png")); // NOI18N
-        jButton2.setText("Cadastrar Cliente");
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.setPreferredSize(new java.awt.Dimension(127, 59));
-        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnCadastrarCliente.setText("Cadastrar Cliente");
+        btnCadastrarCliente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCadastrarCliente.setPreferredSize(new java.awt.Dimension(127, 59));
+        btnCadastrarCliente.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnCadastrarCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnCadastrarClienteActionPerformed(evt);
             }
         });
 
-        btnEstoque.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Inventory32.png")); // NOI18N
         btnEstoque.setText("Estoque");
         btnEstoque.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnEstoque.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -102,37 +102,31 @@ public class FrmMainScreen extends javax.swing.JFrame {
             }
         });
 
-        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Others32.png")); // NOI18N
-        jButton5.setText("Outros");
-        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton5.setPreferredSize(new java.awt.Dimension(71, 59));
-        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnOthers.setText("Outros");
+        btnOthers.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnOthers.setPreferredSize(new java.awt.Dimension(71, 59));
+        btnOthers.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnOthers.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnOthersActionPerformed(evt);
             }
         });
 
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\RegistroSell32.png")); // NOI18N
-        jButton6.setText("Relatorio de vendas");
-        jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton6.setPreferredSize(new java.awt.Dimension(127, 59));
-        jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnRelatorioVendas.setText("Relatorio de vendas");
+        btnRelatorioVendas.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnRelatorioVendas.setPreferredSize(new java.awt.Dimension(127, 59));
+        btnRelatorioVendas.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        jButton7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Enginner.png")); // NOI18N
-        jButton7.setText("Config");
-        jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton7.setPreferredSize(new java.awt.Dimension(71, 59));
-        jButton7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btnConfig.setText("Config");
+        btnConfig.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnConfig.setPreferredSize(new java.awt.Dimension(71, 59));
+        btnConfig.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnConfig.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btnConfigActionPerformed(evt);
             }
         });
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
-        btnCaixa.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dell\\Desktop\\SENAC\\2 SEMESTRE\\PROJETO INTEGRADOR - DESENVOLVIMENTO ESTRUTURADO DE SISTEMAS\\PROJETO\\EDG-Market\\EDG-Market\\src\\main\\resources\\img\\Carrinh32.png")); // NOI18N
         btnCaixa.setText("Caixa");
         btnCaixa.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnCaixa.setPreferredSize(new java.awt.Dimension(71, 59));
@@ -149,25 +143,20 @@ public class FrmMainScreen extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnRegistroProducts)
-                        .addGap(4, 4, 4)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnEstoque)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(40, 40, 40))))
+                .addComponent(btnRegistroProducts)
+                .addGap(4, 4, 4)
+                .addComponent(btnRelatorioVendas, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnCadastrarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 396, Short.MAX_VALUE)
+                .addComponent(btnEstoque)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnConfig, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnOthers, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -176,17 +165,15 @@ public class FrmMainScreen extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnCadastrarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnRegistroProducts, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnEstoque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(btnRelatorioVendas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnOthers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnCaixa, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
-                .addContainerGap())
+                    .addComponent(btnConfig, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(12, 12, 12))
         );
 
         javax.swing.GroupLayout jDskInitialLayout = new javax.swing.GroupLayout(jDskInitial);
@@ -230,17 +217,19 @@ public class FrmMainScreen extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void btnConfigActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfigActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_btnConfigActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnOthersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOthersActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnOthersActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void btnCadastrarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarClienteActionPerformed
+        InternalFrmCadastroCliente novoCliente = new InternalFrmCadastroCliente();
+        novoCliente.setVisible(true);
+        this.jDskInitial.add(novoCliente);
+    }//GEN-LAST:event_btnCadastrarClienteActionPerformed
 
     private void btnRegistroProductsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroProductsActionPerformed
        InternalFrmProductsRegister registroProduto = new InternalFrmProductsRegister();
@@ -296,18 +285,17 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCadastrarCliente;
     private javax.swing.JButton btnCaixa;
+    private javax.swing.JButton btnConfig;
     private javax.swing.JButton btnEstoque;
+    private javax.swing.JButton btnOthers;
     private javax.swing.JButton btnRegistroProducts;
+    private javax.swing.JButton btnRelatorioVendas;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JDesktopPane jDskInitial;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JFrame jFrame2;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
